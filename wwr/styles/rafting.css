@@ -1,0 +1,240 @@
+/* Root Variables */
+:root {
+    --primary-color: #173e60;
+    --secondary-color: #f2f2f2;
+    --text-color: #333333;
+    --heading-font: "Georgia", serif;
+    --body-font: "Arial", sans-serif;
+    --accent1-color: #7d5f43;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: white;
+    line-height: 1.6;
+}
+
+/* Layout Containers */
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    /*padding: 1rem;*/
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    /*padding: 1rem 2rem;*/
+}
+
+header img.logo {
+    max-height: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-right: 1.9rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    background: var(--secondary-color);
+    /*padding: 2rem;*/
+    text-align: center;
+    min-height: 600px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: calc(100% - 4rem);
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.hero-mission {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.hero-mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 500;
+}
+
+.hero article {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+}
+
+.hero article img {
+    max-width: 100px;
+    border-radius: 5px;
+    float: right;
+}
+
+.hero article p {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+/* History Section */
+.history {
+    background: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.history h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.history-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: left;
+}
+
+.history-content img {
+    max-width: 150px;
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.adventure h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery figure {
+    text-align: center;
+}
+
+.gallery img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    justify-self: center;
+}
+
+.gallery figcaption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.socialmedia {
+    margin-top: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer .socialmedia a img {
+    width: 30px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+footer .socialmedia a:hover img {
+    transform: scale(1.1);
+}
