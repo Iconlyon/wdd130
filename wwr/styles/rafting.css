@@ -212,6 +212,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
+    width: 100%;
     background: var(--primary-color);
     color: white;
     text-align: center;
