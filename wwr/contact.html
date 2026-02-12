@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting</title>
+    <meta name="description"
+      content="Whitewater Rafting delivers safe, unforgettable rafting adventures, led by experienced guides who take you through exciting and scenic river journeys.">
+    <meta name="author" content="Lyon Iorngulum ">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Whitewater Rafting Logo" class="logo">
+        <nav aria-label="main navigation">
+            <ul>
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="about.html" title="About - Whitewater Rafting">About Us</a></li>
+                <li><a href="trips.html" title="Trips">Trips</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+
+        <h1>Contact Us</h1>
+        <!-- Company Information -->
+        <section class="company-info">
+            <address>
+                <p><strong>Whitewater Rafting</strong></p>
+                <p>123 Main River Street<br>Kolob, California</p>
+                <p>Phone: <a href="tel:+19999999999">+1 (999) 999-9999</a></p>
+                <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+            </address>
+        </section>
+
+        <!-- Map + Form Layout -->
+        <section class="contact-layout">
+
+            <!-- Google Map -->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15858.554134078327!2d3.4789108252139984!3d6.4404433192550234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf432ea939f25%3A0x9c5443e9f67b05d6!2sIkate%20Elegushi%2C%20Lekki%20Penninsula%20II%2C%20Lekki%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1770926693347!5m2!1sen!2sng"
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
+                        General Inquiry
+                    </label>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit" value="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <!-- Employees -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="employee-cards">
+                <figure>
+                    <img src="images/team1.jpg" alt="Sarah Johnson">
+                    <figcaption>Lyon King – Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/team2.jpg" alt="Michael Reed">
+                    <figcaption>Faith Terkuma – Reservations & Retail Staff </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/team3.jpg" alt="Emily Carter">
+                    <figcaption>Luketer Virgins – Senior Guide</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Whitewater Rafting | Lyon Iorngulum</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook social icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn social icon">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.svg" alt="YouTube social icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
